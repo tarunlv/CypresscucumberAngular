@@ -44,20 +44,6 @@ To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use th
 ng test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-npm run e2e
-```
-
-Cypress and Cucumber are configured. Run either `npm run e2e` or `npm run e2e:run`. Both commands start Angular on port 4300, run the feature scenarios in Chrome, and stop the server afterward.
-
-For interactive testing, run `npm run start -- --port 4300` in one terminal and `npm run e2e:open` in another. The internal `npm run cypress:run` command expects an already-running server and is mainly used by the automated E2E scripts.
-
-Place feature files under `cypress/e2e/` and colocate their steps using matching names, such as `dashboard-navigation.feature` and `dashboard-navigation.steps.ts`. Shared steps belong in `cypress/support/step_definitions/`.
-
 Run unit tests with `npm test`, or include coverage with `npm run test:coverage`.
 
 ## Additional Resources
